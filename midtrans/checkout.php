@@ -1,14 +1,13 @@
 <?php
 namespace Midtrans;
+//agar tidak error karena cross domain dari midtrans ke localhost
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Credentials: true");
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
 header("Content-Type: application/json; charset=utf-8");
-
+//$post = json_decode(file_get_contents('php://input'), true); //menangkap input dari ionic input
 require_once(dirname(__FILE__) . '/vendor/autoload.php');
-// include 'veritrans_token.php';
-
 // if(empty($_GET['token_id'])) {
 //   die('Empty token_id!');
 // }
@@ -96,6 +95,14 @@ $token_id = $snapToken;
 $transaction_data = array(
     'payment_type' => 'credit_card',
     'credit_card'  => array(
+      'secure' => true,
+      'installment' => array( //untuk system cicilan kartu kredit
+            'required' => true,
+            'terms' => array(
+                'bni' => [6, 12],
+                'mandiri' => [6, 12]
+            )
+        ),
       'token_id'      => $token_id,
       // 'bank'          => 'bni', // optional acquiring bank, must be the same bank with get-token bank
       //'save_token_id' => isset($_POST['save_cc'])
