@@ -7,3 +7,5 @@ plugin yang digunakan http6 dan inapbrowser, jangan copy dollarnya<br />
 $ npm i @angular/http<br />
 $ ionic cordova plugin add cordova-plugin-inappbrowser<br />
 $ npm install --save @ionic-native/in-app-browser@4<br />
+
+Kemudian Folder midtrans pindahkan dan taruh di xampp/htdocs
