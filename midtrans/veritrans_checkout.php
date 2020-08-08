@@ -13,7 +13,7 @@ require_once(dirname(__FILE__) . '/vendor/autoload.php');
 //   die('Empty token_id!');
 // }
 
-Config::$serverKey = "SB-Mid-server-ijZwaepcf_46kkCmwuCdbBrq";
+Config::$serverKey = "SERVER KEY KAMU";
 
 if (strpos(Config::$serverKey,'your ') != false ) {
   echo "<code>";
@@ -59,11 +59,11 @@ $items = array(
 
 // Populate customer's billing address
 $billing_address = array(
-    'first_name'   => "Andri",
-    'last_name'    => "Setiawan",
-    'address'      => "Karet Belakang 15A, Setiabudi.",
+    'first_name'   => "Ahmad Naufal",
+    'last_name'    => "Khalid",
+    'address'      => "Jalan Al ihsan No.89 Jati Rahayu",
     'city'         => "Jakarta",
-    'postal_code'  => "51161",
+    'postal_code'  => "17414",
     'phone'        => "081322311801",
     'country_code' => 'IDN'
   );
@@ -81,9 +81,9 @@ $shipping_address = array(
 
 // Populate customer's info
 $customer_details = array(
-    'first_name'       => "Andri",
-    'last_name'        => "Setiawan",
-    'email'            => "andri@setiawan.com",
+    'first_name'   => "Ahmad Naufal",
+    'last_name'    => "Khalid",
+    'email'            => "nauralpk@pusatkursus.com",
     'phone'            => "081322311801",
     'billing_address'  => $billing_address,
     'shipping_address' => $shipping_address
