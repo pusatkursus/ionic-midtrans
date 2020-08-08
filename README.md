@@ -8,4 +8,5 @@ $ npm i @angular/http<br />
 $ ionic cordova plugin add cordova-plugin-inappbrowser<br />
 $ npm install --save @ionic-native/in-app-browser@4<br />
 
-Kemudian Folder midtrans pindahkan dan taruh di xampp/htdocs
+Kemudian Folder midtrans pindahkan dan taruh di xampp/htdocs<br/>
+Kemudian login ke <a href='https://midtrans.com/'>midtrans</a> dan dapatkan apykey lalu ganti server key di file checkout
