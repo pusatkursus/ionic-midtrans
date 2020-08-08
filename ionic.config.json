@@ -1,5 +1,7 @@
 {
   "name": "midtrans",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
