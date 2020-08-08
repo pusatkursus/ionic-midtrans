@@ -1,4 +1,4 @@
-# ionic3-midtrans
+# ionic3-Payment Gateway midtrans API
 
 download dan ekstrak file<br />
 kemudian ketik npm install<br />
