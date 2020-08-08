@@ -24,7 +24,7 @@ export class HomePage {
       gross_amount:this.gross_amount
     }
 
-    this.postPvdr.postData(body, 'veritrans_checkout.php').subscribe((data:any) => {
+    this.postPvdr.postData(body, 'checkout.php').subscribe((data:any) => {
       console.log(data);
       this.hasil=data;
       this.iab.create(data.redirect_url);
