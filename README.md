@@ -11,8 +11,8 @@ $ npm install --save @ionic-native/in-app-browser@4<br />
 Kemudian Folder midtrans pindahkan dan taruh di xampp/htdocs<br/>
 Kemudian login ke <a href='https://midtrans.com/'>midtrans</a> dan dapatkan apykey lalu ganti server key di file checkout
 
-#Build Project<br>
--debuk apk
+#-------------Build Project------------------<br>
+#debuk apk<br>
 ionic cordova build android<br>
 #release apk<br>
 $ ionic cordova build android --release<br>
