@@ -22,3 +22,5 @@ $ keytool -genkey -v -keystore midtrans.jks -alias midtrans -keyalg RSA -keysize
 $ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore "midtrans.jks" "app-release-unsigned.apk" midtrans<br>
 $ zipalign -v 4 "app-release-unsigned.apk" midtrans.apk<br>
 
+tutorial lengkapnya ada disini ya https://pusatkursus.com/2020/08/09/tutorial-ionic-integrasi-dengan-payment-gateway-midtrans/
+
